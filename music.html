@@ -1,0 +1,12 @@
+<audio id="bgm" autoplay loop muted>
+  <source src="https://https://github.com/Beone0214/mp3/blob/Beone0214-mp3-1/768382782-1-208.mp3" type="audio/mpeg">
+</audio>
+<button id="toggleBtn">🔇 Muted</button>
+<script>
+  const audio = document.getElementById('bgm');
+  const btn = document.getElementById('toggleBtn');
+  btn.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    btn.textContent = audio.muted ? '🔇 Muted' : '🔊 Playing';
+  });
+</script>
